@@ -1,22 +1,22 @@
 server:
     port: 8001
+
 spring:
     application:
         name: demo
 
-# Prometheus
 management:
     endpoints:
         web:
             exposure:
-                include: "*"
+                include: "*"      # expose all actuator endpoints
             base-path: /actuator
     endpoint:
         prometheus:
-            enabled: true
+            enabled: true        # enable Prometheus endpoint
     metrics:
         export:
             prometheus:
-                enabled: true
+                enabled: true      # allow metrics export to Prometheus
         enable:
-            all=true:
+            all: true            # enable all metrics
