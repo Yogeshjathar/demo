@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.controller;
 
 import io.micrometer.core.annotation.Counted;
 import io.micrometer.core.annotation.Timed;
